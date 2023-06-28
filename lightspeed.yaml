@@ -1,0 +1,6 @@
+---
+- name: enable httpd service
+  ansible.builtin.service:
+    name: httpd
+    state: started
+    enabled: true
