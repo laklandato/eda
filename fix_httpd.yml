@@ -1,10 +1,10 @@
 ---
 - name: "Site is up"
-  hosts: 10.211.55.5
+  hosts: RHEL9
   gather_facts: false
   become: true
 
-- tasks:
+  tasks:
   - name: restart httpd service
     ansible.builtin.service:
       name: httpd
