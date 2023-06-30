@@ -4,5 +4,5 @@
   gather_facts: false
   tasks:
     - name: show message
-    - ansible.builtin.debug:
+      ansible.builtin.debug:
         msg: "All is up and well"
