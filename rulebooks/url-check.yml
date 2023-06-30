@@ -14,8 +14,11 @@
       condition: event.url_check.status == "up"
     ## Define the action we should take should the condition be met
       action:
-        debug:
-          msg: nice~httpd is start and enable
+#        debug:
+#          msg: nice~httpd is start and enable
+        run_job_template:
+          name: wowza
+          organization: Default
 
     - name: Web site is down
       condition: event.url_check.status == "down"
