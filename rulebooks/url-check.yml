@@ -25,5 +25,5 @@
     ## Define the action we should take should the condition be met
       action:
         run_job_template:
-          name: fix web
+          name: fix httpd
           organization: Default
