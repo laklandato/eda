@@ -1,6 +1,6 @@
 ---
 - name: Site is up
-  hosts: all
+  hosts: RHEL9
   gather_facts: false
   become: true
 
