@@ -5,13 +5,8 @@
   become: true
 
   tasks:
-  - name: restart httpd service
-    ansible.builtin.service:
-      name: httpd
-      state: restarted
-
-  - name: enable httpd service
-    ansible.builtin.service:
-      name: httpd
-      state: started
-      enabled: true
+    - name: started and enalbed httpd service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: true
