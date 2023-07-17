@@ -1,10 +1,14 @@
 ---
-- name: "Site is up"
+- name: "fix httpd"
   hosts: all
   gather_facts: false
   become: true
 
   tasks:
+    - name: "Show massage"
+      ansible.builtin.debug:
+        msg: "Website is down!"
+    
     - name: started and enalbed httpd service
       ansible.builtin.service:
         name: httpd
